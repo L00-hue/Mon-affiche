@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Voici mon site</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+<h1><span>Sortie Cinéma</span></h1>
+
+
+
+<div class="container">
+    <p>Dans le cadre du programme de SVT, sur la notion de Développement Durable, une séance de cinéma est programmée le Dreudi 32 Septebr, au cinéma UGC de Litle de 9h à 12h.</p>
+    <img src="mon_image.jpg" alt="affiche snk"/>
+</div>
+
+</body>
+</html>
+
+<a href="https://www.allocine.fr/series/ficheserie_gen_cserie=17425.html">lien vers synopsis</a>
+<br><br><br><br>
+
+<form>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom">
+
+    <label for="prenom">Prénom :</label>
+    <input type="text"name="prenom">
+
+    <label for="classe">Classe :</label>
+    <input type="text"name="classe"><br>
+	
+	<input type="checkbox">
+	<label for="verser">a verser la somme de 645$ à l'ordre de Monsieur Leroux </label><br>
+	
+	<label>Viendra à la séance ?</label>
+
+        <input type="radio" id="oui" name="participation" value="oui">
+        <label for="oui">Oui</label>
+        <input type="radio" id="non" name="participation" value="non">
+        <label for="non">Non</label>
+	
+</form>
+<div style="height: 50px;"></div>
+ <button class="button" onclick="sendEmail()">Partager cette page</button> 
+
+
+<script>
+    // Initialisation d’EmailJS avec ton User ID
+    (function() {
+        emailjs.init("itp7qtfHraGKU-6rC"); // Remplace par ton User ID
+    })();
+
+    // Fonction pour envoyer l’e-mail
+    function sendEmail() {
+        emailjs.send("service_ddfu0pp", "template_n6kxgf1", {
+            to_name: "charlie",
+            from_name: "Lila",
+            message: "bonjour voici le lien de l'affiche sortie Cinéma ou ;https://codepen.io/L120C/pen/azboMwW ou   https://drive.google.com/drive/folders/1jgAQxt7yeRi7cRjtBIxkQ_O7l_Ol41hg?usp=sharing"
+        }).then(function(response) {
+            alert("Email envoyé avec succès !");
+        }, function(error) {
+            alert("Erreur lors de l'envoi : " + JSON.stringify(error));
+        });
+    }
+</script>

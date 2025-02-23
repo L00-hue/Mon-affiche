@@ -1,0 +1,76 @@
+
+body 
+{
+background-color: skyblue;
+}
+
+
+
+h1
+{
+text-align: center;
+background-color: transparent;
+color: blue;
+font-size: 70px;
+}
+
+h1 span
+{
+background-color: green;
+}
+
+p
+
+{
+
+font-family: Verdana;
+font-style: italic;
+font-size: 40px;
+color: black;
+width: 70%;
+text-align: left;
+
+}
+
+img 
+{
+width: 20%;
+height: auto;
+
+
+}
+
+.container
+{
+display: flex;
+
+align-items: center;
+
+{
+	
+	
+.button {
+  position: fixed;   /* Position fixe par rapport à la fenêtre */
+  bottom: 10px;      /* 10px du bas de la fenêtre */
+  right: 20px;       /* 20px du bord droit de la fenêtre */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;     /* S'assurer que le bouton soit au-dessus des autres éléments */
+}
+
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
