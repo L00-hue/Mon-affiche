@@ -40,33 +40,27 @@ height: auto;
 
 }
 
-.container
-{
-display: flex;
 
-align-items: center;
+.container {
+    display: flex;               /* Utilisation de Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espace entre le texte et l'image */
+    align-items: center;         /* Alignement vertical des éléments */
+    width: 100%;                 /* Utilisation de toute la largeur disponible */
+    padding: 20px;               /* Un peu de padding autour pour ne pas coller aux bords */
+    box-sizing: border-box;      /* Pour inclure le padding dans la largeur totale */
+}
 
-{
-	
-	
 .button {
-  position: fixed;   /* Position fixe par rapport à la fenêtre */
-  bottom: 10px;      /* 10px du bas de la fenêtre */
-  right: 20px;       /* 20px du bord droit de la fenêtre */
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;     /* S'assurer que le bouton soit au-dessus des autres éléments */
+    position: fixed;  /* Fixe le bouton en bas de l'écran */
+    bottom: 20px;  /* Décalage de 20px du bas */
+    right: 20px;  /* Décalage de 20px du côté droit */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-}
 
-.button:hover {
-  background-color: #45a049;
-}
 
 
 

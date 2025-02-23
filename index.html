@@ -25,6 +25,8 @@
 <div class="container">
     <p>Dans le cadre du programme de SVT, sur la notion de Développement Durable, une séance de cinéma est programmée le Dreudi 32 Septebr, au cinéma UGC de Litle de 9h à 12h.</p>
     <img src="mon_image.jpg" alt="affiche snk"/>
+	<button class="button" onclick="sendEmail()">Partager cette page
+
 </div>
 
 </body>
@@ -54,8 +56,7 @@
         <label for="non">Non</label>
 	
 </form>
-<div style="height: 50px;"></div>
- <button class="button" onclick="sendEmail()">Partager cette page</button> 
+
 
 
 <script>
@@ -69,7 +70,7 @@
         emailjs.send("service_ddfu0pp", "template_n6kxgf1", {
             to_name: "charlie",
             from_name: "Lila",
-            message: "bonjour voici le lien de l'affiche sortie Cinéma ou ;https://codepen.io/L120C/pen/azboMwW ou   https://drive.google.com/drive/folders/1jgAQxt7yeRi7cRjtBIxkQ_O7l_Ol41hg?usp=sharing"
+            message: "bonjour voici le lien de l'affiche sortie Cinéma ou ;https://codepen.io/L120C/pen/azboMwW ou   https://drive.google.com/drive/folders/1jgAQxt7yeRi7cRjtBIxkQ_O7l_Ol41hg?usp=sharing ou https://l00-hue.github.io/Mon-affiche/ "
         }).then(function(response) {
             alert("Email envoyé avec succès !");
         }, function(error) {
